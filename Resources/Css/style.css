@@ -1,6 +1,6 @@
-/*-------------*/
-/* BASIC SETUP */
-/*--------------*/
+/*----------------------------------------------*/
+/*---------------- BASIC SETUP ----------------*/
+/*----------------------------------------------*/
 
 * {
     margin: 0px;
@@ -14,4 +14,121 @@ html {
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
+}
+
+/*----------------------------------------------*/
+/*---------------- REUSABLE SETUP ----------------*/
+/*----------------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*----------------------------------------------*/
+/*---------------- HEADER SETUP ----------------*/
+/*----------------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/header.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 200%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.header-container {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*NAVIGATION*/
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link, 
+.main-nav li a:visited {
+    color: #fff;
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;    
+}
+
+.main-nav li a:hover, 
+.main-nav li a:active {
+    border-bottom: 2px solid #569a1f;
+}
+
+/*BUTTONS*/
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    margin-right: 15px;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #376114;
+}
+
+.btn-first:link,
+.btn-first:visited {
+    background-color: #569a1f;
+    border: 1px solid #569a1f;
+    color: #fff;
+}
+
+.btn-first:hover,
+.btn-first:active {
+    border: 1px solid #376114;
+    background-color: #376114;    
+}
+
+.btn-second:link,
+.btn-second:visited {
+    border: 1px solid #569a1f;
+    color: #569a1f;
+}
+
+.btn-second:hover,
+.btn-second:active {
+    border: 1px solid #376114;
+    color: #fff;
 }
