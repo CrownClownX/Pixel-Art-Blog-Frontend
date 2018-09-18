@@ -25,6 +25,15 @@ html {
     margin: 0 auto;
 }
 
+.clearfix {zoom: 1;}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 p {
     text-align: justify;
     text-justify: inter-word;
@@ -161,16 +170,35 @@ header {
 /*----------------------------------------------*/
 
 .recent-posts {
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 .main-post {
-    line-height: 145%;
     margin-bottom: 30px;
 }
 
 .side-post {
     margin-bottom: 10px;
+}
+
+.main-box{
+    padding: 0px 20px;
+    padding-bottom: 10px;
+}
+
+.main-box p {
+    font-size: 110%;
+    line-height: 145%;
+}
+
+.box {
+    padding: 0px 20px;
+    padding-bottom: 10px;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
 }
 
 .post-image{
@@ -191,15 +219,7 @@ header {
     transform: scale(1.15);
 }
 
-.main-box{
-    padding: 10px 20px;
-}
+/*----------------------------------------------*/
+/*---------------- COURSE SETUP ----------------*/
+/*----------------------------------------------*/
 
-.box {
-    padding: 10px 20px;
-}
-
-.box p {
-    font-size: 90%;
-    line-height: 145%;
-}
