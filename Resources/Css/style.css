@@ -74,6 +74,7 @@ h2 {
     letter-spacing: 1px;
     word-spacing: 2px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 h3 {
@@ -89,6 +90,7 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/header.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 100vh;
 }
 
@@ -190,6 +192,10 @@ header {
     margin-bottom: 25px;
 }
 
+.main-post figure img {
+    margin-bottom: 25px;
+}
+
 .main-box{
     padding: 0px 20px;
     padding-bottom: 10px;
@@ -200,8 +206,8 @@ header {
     line-height: 145%;
 }
 
-.main-post figure img {
-    margin-bottom: 25px;
+.main-box h2 {
+    text-align: left;
 }
 
 .box {
@@ -273,6 +279,10 @@ header {
     width: 90%;
 }
 
-.heading h2 {
-    text-align: center;
+/*----------------------------------------------*/
+/*---------------- CATEGORIES SETUP ----------------*/
+/*----------------------------------------------*/
+
+.categories {
+    background-image: url(img/rise.jpg);
 }
