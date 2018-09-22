@@ -284,5 +284,47 @@ header {
 /*----------------------------------------------*/
 
 .categories {
-    background-image: url(img/rise.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/rise.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 40px 0px;
+    color: #fff;
+    height: auto;
+}
+
+.category {
+    padding: 2%;
+    transition: transform 0.5s;
+}
+
+.category:hover {
+    transform: scale(1.1);
+}
+
+.category h3 {
+    text-align: center;
+}
+
+.categories h2:after {
+    display: block;
+    height: 2px;
+    background-color: #569a1f;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+blockquote {
+    font-style: italic;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 145%;
+    word-spacing: 0.5px; 
+}
+
+.icone {
+    font-size: 180%;
+    padding: 0px 10px;
 }
