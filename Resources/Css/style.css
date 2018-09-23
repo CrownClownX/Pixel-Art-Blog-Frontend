@@ -34,6 +34,17 @@ html {
     visibility: hidden;
 }
 
+.bar:after {
+    display: block;
+    height: 2px;
+    background-color: #569a1f;
+    content: " ";
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
 a:link,
 a:visited {
     color: #555;
@@ -51,6 +62,10 @@ a:active {
 p {
     text-align: justify;
     text-justify: inter-word;
+}
+
+section {
+    padding: 50px;
 }
 
 /*HEADINGS*/
@@ -140,7 +155,8 @@ header {
 /*BUTTONS*/
 
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     text-decoration: none;
@@ -150,12 +166,15 @@ header {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #376114;
 }
 
 .btn-first:link,
-.btn-first:visited {
+.btn-first:visited,
+input[type=submit] {
     background-color: #569a1f;
     border: 1px solid #569a1f;
     color: #fff;
@@ -184,10 +203,6 @@ header {
 /*---------------- RECENT POST SETUP ----------------*/
 /*----------------------------------------------*/
 
-.recent-posts {
-    padding: 30px 0;
-}
-
 .main-post {
     margin-bottom: 25px;
 }
@@ -208,6 +223,7 @@ header {
 
 .main-box h2 {
     text-align: left;
+    padding: 0;
 }
 
 .box {
@@ -243,22 +259,54 @@ header {
 }
 
 /*----------------------------------------------*/
+/*---------------- CATEGORIES SETUP ----------------*/
+/*----------------------------------------------*/
+
+.section-categories {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/rise.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    height: auto;
+}
+
+.section-categories a {
+    color: #fff;
+}
+
+.category {
+    padding: 2%;
+    transition: transform 0.5s;
+}
+
+.category:hover {
+    transform: scale(1.1);
+}
+
+.category h3 {
+    text-align: center;
+}
+
+blockquote {
+    font-style: italic;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 145%;
+    word-spacing: 0.5px; 
+}
+
+.icone {
+    font-size: 180%;
+    padding: 0px 10px;
+}
+
+/*----------------------------------------------*/
 /*---------------- COURSE SETUP ----------------*/
 /*----------------------------------------------*/
 
-.course {
+.section-course {
     background-color: rgb(236, 233, 233);
-    padding: 50px 0;
-}
-
-.course h2:after {
-    display: block;
-    height: 2px;
-    background-color: #569a1f;
-    content: " ";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
 }
 
 .side-box {
@@ -302,55 +350,34 @@ header {
 }
 
 /*----------------------------------------------*/
-/*---------------- CATEGORIES SETUP ----------------*/
+/*---------------- SUBSCRIBE SETUP ----------------*/
 /*----------------------------------------------*/
 
-.categories {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/rise.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 40px 0px;
-    color: #fff;
-    height: auto;
-}
-
-.categories a {
-    color: #fff;
-}
-
-.category {
-    padding: 2%;
-    transition: transform 0.5s;
-}
-
-.category:hover {
-    transform: scale(1.1);
-}
-
-.category h3 {
-    text-align: center;
-}
-
-.categories h2:after {
-    display: block;
-    height: 2px;
-    background-color: #569a1f;
-    content: " ";
-    width: 100px;
+.newsletter-form {
+    width: 60%;
     margin: 0 auto;
-    margin-top: 30px;
 }
 
-blockquote {
-    font-style: italic;
-    text-align: justify;
-    text-justify: inter-word;
-    line-height: 145%;
-    word-spacing: 0.5px; 
+.news-box {
+    padding: 10px 0px;
 }
 
-.icone {
-    font-size: 180%;
-    padding: 0px 10px;
+label {
+    padding-top: 15px;
+    font-size: 125%; 
+    margin-left: 60%;
 }
+
+input[type=submit] {
+    margin: 10px 0;
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 4px; 
+    box-shadow: 2px 3px 2px rgb(243, 243, 243);
+}
+
