@@ -381,3 +381,47 @@ input[type=email] {
     box-shadow: 2px 3px 2px rgb(243, 243, 243);
 }
 
+/*----------------------------------------------*/
+/*---------------- FOOTER SETUP ----------------*/
+/*----------------------------------------------*/
+
+footer {
+    background-color: rgb(32, 32, 32);
+    padding: 50px;
+    font-size: 90%;
+}
+
+.footer-info,
+.footer-social {
+    list-style: none;
+}
+
+.footer-social {
+    float: right;
+}
+
+.footer-info li,
+.footer-social li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-social li:last-child {
+    margin-right: 0;
+}
+
+.footer-info a,
+.footer-social a {
+    border:  0px;
+}
+
+.footer-info a:hover,
+.footer-social a:hover {
+    border:  0px;
+}
+
+footer p {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 90%;
+}
