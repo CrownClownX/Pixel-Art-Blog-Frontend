@@ -5,7 +5,8 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html,
@@ -52,6 +53,7 @@ a:visited {
     color: #555;
     border-bottom: 1px solid transparent;
     text-decoration: none;
+    -webkit-transition: color 0.5s, border-bottom 0.5s;
     transition: color 0.5s, border-bottom 0.5s;
 }
 
@@ -104,6 +106,7 @@ h3 {
 /*----------------------------------------------*/
 
 header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/header.png);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/header.png);
     background-size: cover;
     background-position: center;
@@ -116,7 +119,8 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 /*NAVIGATION*/
@@ -139,6 +143,7 @@ header {
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;    
 }
 
@@ -156,6 +161,7 @@ input[type=submit] {
     padding: 10px 30px;
     text-decoration: none;
     border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
     margin-right: 15px;
 }
@@ -240,13 +246,18 @@ input[type=submit] {
     width: 100%;
     height: auto; 
     opacity: 0.7;
-    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .post-image img:hover {
     opacity: 1;
-    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
 }
 
 /*----------------------------------------------*/
@@ -254,6 +265,7 @@ input[type=submit] {
 /*----------------------------------------------*/
 
 .section-categories {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/rise.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/rise.jpg);
     background-size: cover;
     background-position: center;
@@ -268,11 +280,15 @@ input[type=submit] {
 
 .category {
     padding: 2%;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .category:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 .category h3 {
@@ -315,7 +331,8 @@ blockquote {
     margin-left: 5%;
     margin-top: 10px;
     border-radius: 10px;
-    box-shadow: 2px 3px 2px rgb(243, 243, 243);
+    -webkit-box-shadow: 2px 3px 2px rgb(243, 243, 243);
+            box-shadow: 2px 3px 2px rgb(243, 243, 243);
 }
 
 .border-div div {
@@ -369,7 +386,8 @@ input[type=email] {
     padding: 5px;
     border: 1px solid rgb(212, 212, 212);
     border-radius: 4px; 
-    box-shadow: 2px 3px 2px rgb(243, 243, 243);
+    -webkit-box-shadow: 2px 3px 2px rgb(243, 243, 243); 
+            box-shadow: 2px 3px 2px rgb(243, 243, 243);
 }
 
 /*----------------------------------------------*/
