@@ -12,6 +12,24 @@ $(document).ready(function() {
         offset: '5%'
     });
 
+    $('.js-animate-1').waypoint(function(direction) {
+        $('.js-animate-1').addClass('animated fadeIn');
+    }, {
+        offset: '50%' 
+    });
+
+    $('.js-animate-2').waypoint(function(direction) {
+        $('.js-animate-2').addClass('animated bounceInLeft');
+    }, {
+        offset: '50%' 
+    });
+
+    $('.mobile-nav-icon').click(function() {
+        var nav = $('.js-toggle');
+
+        nav.slideToggle(200);
+    });
+
     $('a[href*="#"]').not('[href="#"]').not('[href="#0"]')
         .click(function(event) {
 

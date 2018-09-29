@@ -13,6 +13,10 @@
     section {
         padding: 40px;
     }
+
+    .main-nav {
+        display: block;
+      }
 }
 
 /**/
@@ -32,6 +36,11 @@
     .side-box img {
         width: 115%;
     }
+
+    
+    .main-nav {
+        display: block;
+      }
 }
 
 /**/
@@ -76,7 +85,9 @@
     }
 
     .main-nav {
-        visibility: hidden;
+        float: left;
+        display: none;
+        margin: 15px 0; 
     }
 
     .side-box img {
@@ -90,6 +101,31 @@
 
     .box {
         padding-bottom: 15px;
+    }
+
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+
+    .main-nav li {
+        display: block;
+        padding: 5px 0;
+        font-size: 110%;
+    }
+
+    .main-nav li:link,
+    .main-nav li:visited {
+        display: block;
+        border: 0;  
+    }
+
+    .main-nav li:hover {
+        display: block;
+        border: 0;  
+    }
+
+    .sticky .mobile-nav-icon i {
+        color: #555;
     }
 }
 
